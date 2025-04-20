@@ -1,6 +1,7 @@
 name: budget_tracker
-description: A simple budget tracker
-publish_to: 'none'
+description: A simple budget tracker app
+publish_to: 'none' # this prevents accidental publishing
+
 version: 1.0.0+1
 
 environment:
@@ -8,6 +9,8 @@ environment:
 
 dependencies:
   flutter:
+    sdk: flutter
+  flutter_localizations:
     sdk: flutter
   provider: ^6.0.0
   shared_preferences: ^2.0.15
@@ -18,4 +21,5 @@ dev_dependencies:
     sdk: flutter
 
 flutter:
+  generate: true
   uses-material-design: true
